@@ -77,10 +77,10 @@ CommentContent       = ( [^*] | \*+ [^/*] )*
 							
 							if(isFirstLine){
 								System.out.printf("\nLinha: %d - ", line++);
-								System.out.printf("[reserved_word %s]", reservedWord);
+								System.out.printf("[reserved_word, %s]", reservedWord);
 								isFirstLine = false;
 							}else {
-								System.out.printf("[reserved_word %s]", reservedWord);
+								System.out.printf("[reserved_word, %s]", reservedWord);
 								//o escopo do for começa quando ele é identificado
 								if(reservedWord.equalsIgnoreCase("for")){
 									lastReservedWordIsFor = true;
